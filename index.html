@@ -136,6 +136,20 @@
       </section>
 
       <section id="student-portal" class="portal-panel active-panel">
+        <div class="container student-identity-bar">
+          <label class="student-name-field" for="student-name">
+            <span>Student name</span>
+            <input id="student-name" type="text" autocomplete="off" placeholder="Enter your name" />
+          </label>
+          <label class="student-profile-field" for="student-profile-select">
+            <span>Demo profile</span>
+            <select id="student-profile-select" aria-label="Select a separate browser demo profile"></select>
+          </label>
+          <button class="secondary-btn small-btn" id="save-student-name" type="button">Save name</button>
+          <button class="chip-button small-btn" id="new-demo-student" type="button">New student</button>
+          <div class="student-date">Today <strong id="student-date"></strong></div>
+          <p class="identity-note" id="identity-status">Use “New student” to keep another demo student’s records separate. This browser-only demo is not secure authentication.</p>
+        </div>
         <div class="container panel-layout">
           <aside class="portal-sidebar">
             <h3>Student dashboard</h3>
@@ -183,11 +197,14 @@
               </div>
 
               <div class="task-panel">
-                <h4>Current tasks</h4>
-                <div class="task-row"><span>Review Lesson 1 recap</span><button class="chip-button" data-task="lesson1 recap">Mark complete</button></div>
-                <div class="task-row"><span>Complete Lesson 1 quiz</span><button class="chip-button" data-task="lesson1 quiz">Mark complete</button></div>
-                <div class="task-row"><span>Submit Lesson 1 exit ticket</span><button class="chip-button" data-task="lesson1 exit">Mark complete</button></div>
-                <div class="task-row"><span>Review fieldwork preparation</span><button class="chip-button" data-task="fieldwork prep">Mark complete</button></div>
+                <h4>Activity checklist</h4>
+                <div class="task-row"><span>Lesson 1 quiz</span><strong data-activity-status="quiz-lesson1">Not submitted</strong></div>
+                <div class="task-row"><span>Lesson 1 exit ticket</span><strong data-activity-status="exit-lesson1">Not submitted</strong></div>
+                <div class="task-row"><span>Lesson 2 quiz</span><strong data-activity-status="quiz-lesson2">Not submitted</strong></div>
+                <div class="task-row"><span>Lesson 2 exit ticket</span><strong data-activity-status="exit-lesson2">Not submitted</strong></div>
+                <div class="task-row"><span>Lesson 3 quiz</span><strong data-activity-status="quiz-lesson3">Not submitted</strong></div>
+                <div class="task-row"><span>Lesson 3 exit ticket</span><strong data-activity-status="exit-lesson3">Not submitted</strong></div>
+                <div class="task-row"><span>Fieldwork reflection</span><strong data-activity-status="fieldwork">Not submitted</strong></div>
               </div>
             </section>
 
@@ -313,6 +330,7 @@
                   <h4>Lesson 1 — Industrial change</h4>
                   <p>Explain one workplace or industry change in Honeysuckle and describe how it might affect workers or the local economy.</p>
                   <textarea data-exit-ticket="lesson1" placeholder="Type your response..."></textarea>
+                  <p class="submission-status" data-activity-status="exit-lesson1">Not submitted</p>
                   <div class="ticket-actions">
                     <button class="secondary-btn small-btn" data-exit-submit="lesson1" data-mode="draft">Save draft</button>
                     <button class="primary-btn small-btn" data-exit-submit="lesson1" data-mode="submit">Submit</button>
@@ -323,6 +341,7 @@
                   <h4>Lesson 2 — Community impact</h4>
                   <p>Describe one positive and one negative effect of industrial change on a community or local area.</p>
                   <textarea data-exit-ticket="lesson2" placeholder="Type your response..."></textarea>
+                  <p class="submission-status" data-activity-status="exit-lesson2">Not submitted</p>
                   <div class="ticket-actions">
                     <button class="secondary-btn small-btn" data-exit-submit="lesson2" data-mode="draft">Save draft</button>
                     <button class="primary-btn small-btn" data-exit-submit="lesson2" data-mode="submit">Submit</button>
@@ -333,6 +352,7 @@
                   <h4>Lesson 3 — Stakeholder decisions</h4>
                   <p>Identify one compromise made during your redevelopment decision and explain why it may be necessary.</p>
                   <textarea data-exit-ticket="lesson3" placeholder="Type your response..."></textarea>
+                  <p class="submission-status" data-activity-status="exit-lesson3">Not submitted</p>
                   <div class="ticket-actions">
                     <button class="secondary-btn small-btn" data-exit-submit="lesson3" data-mode="draft">Save draft</button>
                     <button class="primary-btn small-btn" data-exit-submit="lesson3" data-mode="submit">Submit</button>
@@ -364,36 +384,35 @@
               </div>
 
               <div class="fieldwork-card">
-                <h4>Optional digital reflection</h4>
-                <p>Write one observation about the site and one prediction for the future of work in Honeysuckle.</p>
-                <textarea id="fieldwork-reflection" placeholder="Type your reflection..."></textarea>
+                <h4>Digital fieldwork reflection</h4>
+                <p>Use your excursion evidence to propose a change and explain how it could affect work and the community.</p>
 
                 <div class="student-fieldwork-form">
                   <label>
-                    <span>My idea</span>
-                    <input id="student-fieldwork-idea" type="text" placeholder="What change would you introduce?" />
+                    <span>Proposed change to Honeysuckle</span>
+                    <input id="student-fieldwork-idea" type="text" required placeholder="What change would you introduce?" />
                   </label>
                   <label>
-                    <span>My evidence</span>
-                    <input id="student-fieldwork-evidence" type="text" placeholder="What did you observe?" />
+                    <span>Evidence collected during the excursion</span>
+                    <textarea id="student-fieldwork-evidence" required placeholder="What did you observe or record?"></textarea>
                   </label>
                   <label>
-                    <span>Changing work</span>
-                    <input id="student-fieldwork-work" type="text" placeholder="What jobs or industries could change?" />
+                    <span>Types of work or industries affected</span>
+                    <textarea id="student-fieldwork-work" required placeholder="Which jobs or industries could be affected?"></textarea>
                   </label>
                   <label>
-                    <span>Stakeholders</span>
-                    <input id="student-fieldwork-stakeholders" type="text" placeholder="Who would benefit or have concerns?" />
+                    <span>Stakeholders who may benefit or have concerns</span>
+                    <textarea id="student-fieldwork-stakeholders" required placeholder="Who may benefit, and who may have concerns?"></textarea>
                   </label>
                   <label>
-                    <span>Final reflection</span>
-                    <textarea id="student-fieldwork-final" placeholder="How has work in Honeysuckle changed, and what might change next?"></textarea>
+                    <span>Final reflection on past and future work</span>
+                    <textarea id="student-fieldwork-final" required placeholder="How has work in Honeysuckle changed, and how might it change next?"></textarea>
                   </label>
                 </div>
 
+                <p class="submission-status" data-activity-status="fieldwork">Not submitted</p>
                 <div class="ticket-actions">
-                  <button class="secondary-btn small-btn" data-task="fieldwork prep">Mark preparation reviewed</button>
-                  <button class="primary-btn small-btn" data-task="fieldwork reflection">Save reflection</button>
+                  <button class="primary-btn small-btn" id="submit-fieldwork-reflection" type="button">Submit reflection</button>
                 </div>
               </div>
             </section>
@@ -501,6 +520,17 @@
             <div id="fieldwork-activity-grid" class="fieldwork-activity-grid"></div>
           </section>
 
+          <section class="teacher-section demo-settings">
+            <div class="section-heading inline-heading">
+              <p class="eyebrow">Demonstration settings</p>
+              <h3>Browser-only records</h3>
+            </div>
+            <p>Demo submissions are stored only in this browser and are not shared across devices or browsers.</p>
+            <p id="legacy-storage-note" class="muted" hidden></p>
+            <button class="secondary-btn small-btn" id="reset-demo-progress" type="button">Reset Demo Progress</button>
+            <p class="game-result" id="demo-reset-status" aria-live="polite"></p>
+          </section>
+
           <section class="teacher-section">
             <div class="section-heading inline-heading">
               <p class="eyebrow">Student work</p>
@@ -514,28 +544,39 @@
             </div>
 
             <div id="exit-tickets-table" class="submission-panel active-panel">
+              <div class="exit-lesson-filters" role="group" aria-label="Filter exit tickets by lesson">
+                <button class="submission-tab active" type="button" data-exit-filter="lesson1">Lesson 1 — Exit Ticket</button>
+                <button class="submission-tab" type="button" data-exit-filter="lesson2">Lesson 2 — Exit Ticket</button>
+                <button class="submission-tab" type="button" data-exit-filter="lesson3">Lesson 3 — Exit Ticket</button>
+              </div>
               <table>
                 <thead>
-                  <tr><th>Student</th><th>Lesson</th><th>Status</th><th>Response</th><th>Date</th></tr>
+                  <tr><th>Student</th><th>Lesson</th><th>Submitted</th><th>Status</th><th>Response preview</th><th></th></tr>
                 </thead>
                 <tbody id="teacher-exit-list"></tbody>
               </table>
+              <div id="exit-review-panel" class="review-panel" hidden></div>
             </div>
 
             <div id="quiz-results-table" class="submission-panel">
               <table>
                 <thead>
-                  <tr><th>Student</th><th>Lesson 1</th><th>Lesson 2</th><th>Lesson 3</th><th>Overall</th></tr>
+                  <tr><th>Student</th><th>Lesson</th><th>Score</th><th>Submitted</th><th>Status</th><th></th></tr>
                 </thead>
                 <tbody id="teacher-quiz-list"></tbody>
               </table>
+              <div id="quiz-review-panel" class="review-panel" hidden></div>
             </div>
 
             <div id="fieldwork-reflections-table" class="submission-panel">
-              <div class="teacher-reflection-layout">
-                <ul id="teacher-fieldwork-list" class="fieldwork-reflection-list"></ul>
-                <div id="fieldwork-reflection-detail" class="reflection-detail"></div>
-              </div>
+              <table>
+                <thead>
+                  <tr><th>Student</th><th>Submitted</th><th>Status</th><th>Proposal</th><th></th></tr>
+                </thead>
+                <tbody id="teacher-fieldwork-list"></tbody>
+              </table>
+              <p id="fieldwork-empty-state" class="empty-state" hidden>No fieldwork reflections submitted yet.</p>
+              <div id="fieldwork-reflection-detail" class="review-panel" hidden></div>
             </div>
           </section>
         </div>

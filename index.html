@@ -1,0 +1,554 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Honeysuckle Commerce Learning Lab</title>
+    <meta
+      name="description"
+      content="Stage 5 Commerce learning portal exploring work, wellbeing and stakeholder decisions in Honeysuckle."
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <header class="site-header">
+      <div class="container header-inner">
+        <div class="brand">
+          <div class="brand-mark">H</div>
+          <div>
+            <p class="eyebrow">EDUC2060 / Stage 5 Commerce</p>
+            <h1>Honeysuckle Learning Lab</h1>
+          </div>
+        </div>
+        <nav class="top-nav" aria-label="Primary navigation">
+          <a href="#sequence">Sequence</a>
+          <a href="#student-portal">Student Portal</a>
+          <a href="#teacher-portal">Teacher Portal</a>
+          <a href="#fieldwork">Fieldwork</a>
+        </nav>
+      </div>
+    </header>
+
+    <main>
+      <section class="hero">
+        <div class="container hero-grid">
+          <div class="hero-copy">
+            <p class="eyebrow accent">Inquiry focus</p>
+            <h2>How has the changing nature of work shaped Honeysuckle, and where might it be heading next?</h2>
+            <p class="lead">
+              Students identify the jobs and work arrangements connected to different industries before exploring how employment affects wellbeing and community life. They then evaluate how stakeholders influence redevelopment decisions and use a fieldwork visit to connect the local site to broader questions about change over time.
+            </p>
+            <div class="cta-row">
+              <button class="primary-btn" data-target="student-portal">Open Student Portal</button>
+              <button class="secondary-btn" data-target="teacher-portal">Open Teacher Portal</button>
+            </div>
+            <ul class="mini-stats">
+              <li><strong>3</strong><span>lessons</span></li>
+              <li><strong>1</strong><span>excursion</span></li>
+              <li><strong>60</strong><span>minutes each</span></li>
+            </ul>
+          </div>
+
+          <div class="hero-visual" aria-label="Sequence overview diagram">
+            <button class="visual-card card-a" data-target-section="lesson1">
+              <span>Lesson 1</span>
+              <strong>What work looks like</strong>
+            </button>
+            <button class="visual-card card-b" data-target-section="lesson2">
+              <span>Lesson 2</span>
+              <strong>Why work matters</strong>
+            </button>
+            <button class="visual-card card-c" data-target-section="lesson3">
+              <span>Lesson 3</span>
+              <strong>Who shapes change</strong>
+            </button>
+            <button class="visual-card card-d" data-target-section="fieldwork">
+              <span>Fieldwork</span>
+              <strong>What has changed, and what happens next?</strong>
+            </button>
+          </div>
+        </div>
+      </section>
+
+      <section id="sequence" class="map-section">
+        <div class="container">
+          <div class="section-heading">
+            <p class="eyebrow">Sequence overview</p>
+            <h3>Purposeful progression from place knowledge to community inquiry</h3>
+          </div>
+
+          <div class="sequence-grid">
+            <article class="sequence-card lesson-one" id="lesson1">
+              <div class="card-tag">Lesson 1</div>
+              <h4>Types of work</h4>
+              <p>Students investigate the jobs and work arrangements connected to different industries and local change.</p>
+              <ul>
+                <li>Industry Workforce Challenge</li>
+                <li>Honeysuckle Worker Sort</li>
+                <li>Industry Collision</li>
+              </ul>
+            </article>
+
+            <article class="sequence-card lesson-two" id="lesson2">
+              <div class="card-tag">Lesson 2</div>
+              <h4>Work and wellbeing</h4>
+              <p>Students examine how industrial change can affect finances, identity, social connection and community wellbeing.</p>
+              <ul>
+                <li>Workshop closure discussion</li>
+                <li>Research source analysis</li>
+                <li>Opinion line</li>
+              </ul>
+            </article>
+
+            <article class="sequence-card lesson-three" id="lesson3">
+              <div class="card-tag">Lesson 3</div>
+              <h4>Stakeholders</h4>
+              <p>Students represent competing interests during redevelopment decision-making and consider whose priorities shape change.</p>
+              <ul>
+                <li>Stakeholder planning</li>
+                <li>Development meeting</li>
+                <li>Decision matrix</li>
+              </ul>
+            </article>
+
+            <article class="sequence-card lesson-fieldwork" id="fieldwork-overview-card">
+              <div class="card-tag">Fieldwork</div>
+              <h4>Honeysuckle excursion</h4>
+              <p>Students walk the site to investigate evidence of changing industries, land use and stakeholder influence.</p>
+              <ul>
+                <li>Evidence hunt</li>
+                <li>Observation notes</li>
+                <li>Future prediction</li>
+              </ul>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <section class="portal-switch">
+        <div class="container switch-wrap">
+          <button class="tab-button active" data-tab="student-portal">Student Portal</button>
+          <button class="tab-button" data-tab="teacher-portal">Teacher Portal</button>
+        </div>
+      </section>
+
+      <section id="student-portal" class="portal-panel active-panel">
+        <div class="container panel-layout">
+          <aside class="portal-sidebar">
+            <h3>Student dashboard</h3>
+            <nav class="sidebar-nav">
+              <button class="nav-link active" data-section="dashboard">Dashboard</button>
+              <button class="nav-link" data-section="lesson1-view">Lesson 1 — Types of Work</button>
+              <button class="nav-link" data-section="lesson2-view">Lesson 2 — Work and Wellbeing</button>
+              <button class="nav-link" data-section="lesson3-view">Lesson 3 — Stakeholders</button>
+              <button class="nav-link" data-section="exit-tickets">Exit Tickets</button>
+              <button class="nav-link" data-section="fieldwork-view">Fieldwork</button>
+            </nav>
+            <div class="progress-card">
+              <p class="muted">Sequence progress</p>
+              <div class="progress-track"><span id="progress-fill" style="width: 0%"></span></div>
+              <strong id="progress-text">0% complete</strong>
+            </div>
+          </aside>
+
+          <div class="portal-main">
+            <section id="dashboard" class="content-block student-view active-view">
+              <div class="section-heading inline-heading">
+                <p class="eyebrow">Welcome back</p>
+                <h3>My learning journey at Honeysuckle</h3>
+              </div>
+
+              <div class="student-grid">
+                <article class="info-card blue">
+                  <span class="card-kicker">Lesson 1</span>
+                  <h4>Types of work</h4>
+                  <p>Investigate the jobs and work arrangements connected to place.</p>
+                  <div class="mini-progress"><span data-lesson-progress="lesson1"></span></div>
+                </article>
+                <article class="info-card orange">
+                  <span class="card-kicker">Lesson 2</span>
+                  <h4>Work and wellbeing</h4>
+                  <p>Examine how industrial change affects individuals and communities.</p>
+                  <div class="mini-progress"><span data-lesson-progress="lesson2"></span></div>
+                </article>
+                <article class="info-card purple">
+                  <span class="card-kicker">Lesson 3</span>
+                  <h4>Stakeholders</h4>
+                  <p>Understand how competing interests shape redevelopment.</p>
+                  <div class="mini-progress"><span data-lesson-progress="lesson3"></span></div>
+                </article>
+              </div>
+
+              <div class="task-panel">
+                <h4>Current tasks</h4>
+                <div class="task-row"><span>Review Lesson 1 recap</span><button class="chip-button" data-task="lesson1 recap">Mark complete</button></div>
+                <div class="task-row"><span>Complete Lesson 1 quiz</span><button class="chip-button" data-task="lesson1 quiz">Mark complete</button></div>
+                <div class="task-row"><span>Submit Lesson 1 exit ticket</span><button class="chip-button" data-task="lesson1 exit">Mark complete</button></div>
+                <div class="task-row"><span>Review fieldwork preparation</span><button class="chip-button" data-task="fieldwork prep">Mark complete</button></div>
+              </div>
+            </section>
+
+            <section id="lesson1-view" class="content-block student-view">
+              <div class="section-heading inline-heading">
+                <p class="eyebrow">Lesson 1</p>
+                <h3>Types of work</h3>
+              </div>
+              <div class="lesson-copy">
+                <p>Students begin by identifying the jobs and work arrangements connected to different industries, before considering how local work patterns change over time.</p>
+              </div>
+
+              <div class="activity-card">
+                <h4>Worker classification game</h4>
+                <p>Read each case study and choose the most likely work arrangement.</p>
+                <div class="game-grid">
+                  <div class="game-item">
+                    <strong>Case study A</strong>
+                    <p>Iris has regular hours on a permanent contract at the port and works a full week.</p>
+                    <div class="answer-group">
+                      <button class="option-btn" data-answer="full-time" data-game="lesson1-game">Full-time</button>
+                      <button class="option-btn" data-answer="part-time" data-game="lesson1-game">Part-time</button>
+                      <button class="option-btn" data-answer="casual" data-game="lesson1-game">Casual</button>
+                    </div>
+                  </div>
+                  <div class="game-item">
+                    <strong>Case study B</strong>
+                    <p>Sam works on a project-based role for a short period while a café is being renovated.</p>
+                    <div class="answer-group">
+                      <button class="option-btn" data-answer="contract" data-game="lesson1-game">Contract</button>
+                      <button class="option-btn" data-answer="apprenticeship" data-game="lesson1-game">Apprenticeship</button>
+                      <button class="option-btn" data-answer="remote" data-game="lesson1-game">Remote</button>
+                    </div>
+                  </div>
+                </div>
+                <p class="game-result" data-result="lesson1-game"></p>
+              </div>
+
+              <div class="quiz-box">
+                <div class="quiz-header">
+                  <h4>Lesson 1 quiz</h4>
+                  <button class="primary-btn small-btn" data-quiz="lesson1">Start quiz</button>
+                </div>
+                <div id="quiz-lesson1" class="quiz-shell"></div>
+              </div>
+            </section>
+
+            <section id="lesson2-view" class="content-block student-view">
+              <div class="section-heading inline-heading">
+                <p class="eyebrow">Lesson 2</p>
+                <h3>Work and wellbeing</h3>
+              </div>
+              <div class="lesson-copy">
+                <p>Students move beyond jobs to examine how employment affects identity, family life and local wellbeing when industries change or close.</p>
+              </div>
+
+              <div class="activity-card">
+                <h4>Opinion line</h4>
+                <p>Choose where you stand on this statement: “Industrial change can strengthen a community even when some workers lose their jobs.”</p>
+                <div class="opinion-scale">
+                  <label><input type="radio" name="opinion-lesson2" value="strongly-disagree" /> Strongly disagree</label>
+                  <label><input type="radio" name="opinion-lesson2" value="disagree" /> Disagree</label>
+                  <label><input type="radio" name="opinion-lesson2" value="uncertain" /> Unsure</label>
+                  <label><input type="radio" name="opinion-lesson2" value="agree" /> Agree</label>
+                  <label><input type="radio" name="opinion-lesson2" value="strongly-agree" /> Strongly agree</label>
+                </div>
+                <button class="secondary-btn small-btn" data-activity="lesson2 opinion">Save response</button>
+                <p class="game-result" data-result="lesson2-opinion"></p>
+              </div>
+
+              <div class="quiz-box">
+                <div class="quiz-header">
+                  <h4>Lesson 2 quiz</h4>
+                  <button class="primary-btn small-btn" data-quiz="lesson2">Start quiz</button>
+                </div>
+                <div id="quiz-lesson2" class="quiz-shell"></div>
+              </div>
+            </section>
+
+            <section id="lesson3-view" class="content-block student-view">
+              <div class="section-heading inline-heading">
+                <p class="eyebrow">Lesson 3</p>
+                <h3>Stakeholders</h3>
+              </div>
+              <div class="lesson-copy">
+                <p>Students represent different stakeholders and negotiate how a former industrial waterfront site could be used, balancing planning, jobs, heritage and community values.</p>
+              </div>
+
+              <div class="activity-card">
+                <h4>Stakeholder decision challenge</h4>
+                <p>Choose a stakeholder and then decide which redevelopment approach best matches their interests.</p>
+                <div class="stakeholder-picks">
+                  <button class="stakeholder-btn" data-stakeholder="workers">Industrial workers and unions</button>
+                  <button class="stakeholder-btn" data-stakeholder="residents">Local residents</button>
+                  <button class="stakeholder-btn" data-stakeholder="developers">Property developers</button>
+                  <button class="stakeholder-btn" data-stakeholder="environment">Environment and heritage advocates</button>
+                </div>
+                <div class="choice-row">
+                  <button class="choice-btn" data-choice="housing">Priority housing and public space</button>
+                  <button class="choice-btn" data-choice="industry">Continue with industry and freight activity</button>
+                  <button class="choice-btn" data-choice="mixed">Mixed-use waterfront development</button>
+                </div>
+                <p class="game-result" data-result="lesson3-stakeholder"></p>
+              </div>
+
+              <div class="quiz-box">
+                <div class="quiz-header">
+                  <h4>Lesson 3 quiz</h4>
+                  <button class="primary-btn small-btn" data-quiz="lesson3">Start quiz</button>
+                </div>
+                <div id="quiz-lesson3" class="quiz-shell"></div>
+              </div>
+            </section>
+
+            <section id="exit-tickets" class="content-block student-view">
+              <div class="section-heading inline-heading">
+                <p class="eyebrow">Exit tickets</p>
+                <h3>Short responses from the lesson</h3>
+              </div>
+
+              <div class="ticket-grid">
+                <article class="ticket-card">
+                  <h4>Lesson 1 — Industrial change</h4>
+                  <p>Explain one workplace or industry change in Honeysuckle and describe how it might affect workers or the local economy.</p>
+                  <textarea data-exit-ticket="lesson1" placeholder="Type your response..."></textarea>
+                  <div class="ticket-actions">
+                    <button class="secondary-btn small-btn" data-exit-submit="lesson1" data-mode="draft">Save draft</button>
+                    <button class="primary-btn small-btn" data-exit-submit="lesson1" data-mode="submit">Submit</button>
+                  </div>
+                </article>
+
+                <article class="ticket-card">
+                  <h4>Lesson 2 — Community impact</h4>
+                  <p>Describe one positive and one negative effect of industrial change on a community or local area.</p>
+                  <textarea data-exit-ticket="lesson2" placeholder="Type your response..."></textarea>
+                  <div class="ticket-actions">
+                    <button class="secondary-btn small-btn" data-exit-submit="lesson2" data-mode="draft">Save draft</button>
+                    <button class="primary-btn small-btn" data-exit-submit="lesson2" data-mode="submit">Submit</button>
+                  </div>
+                </article>
+
+                <article class="ticket-card">
+                  <h4>Lesson 3 — Stakeholder decisions</h4>
+                  <p>Identify one compromise made during your redevelopment decision and explain why it may be necessary.</p>
+                  <textarea data-exit-ticket="lesson3" placeholder="Type your response..."></textarea>
+                  <div class="ticket-actions">
+                    <button class="secondary-btn small-btn" data-exit-submit="lesson3" data-mode="draft">Save draft</button>
+                    <button class="primary-btn small-btn" data-exit-submit="lesson3" data-mode="submit">Submit</button>
+                  </div>
+                </article>
+              </div>
+            </section>
+
+            <section id="fieldwork-view" class="content-block student-view">
+              <div class="section-heading inline-heading">
+                <p class="eyebrow">Fieldwork</p>
+                <h3>Honeysuckle excursion</h3>
+              </div>
+
+              <div class="fieldwork-overview">
+                <div>
+                  <h4>Inquiry question</h4>
+                  <p>How has the changing nature of work shaped Honeysuckle, and where might it be heading next?</p>
+                </div>
+                <div>
+                  <h4>What students look for</h4>
+                  <ul>
+                    <li>Evidence of industrial land use and redevelopment</li>
+                    <li>Different occupations and work arrangements</li>
+                    <li>Community wellbeing, access and public space</li>
+                    <li>Stakeholder influence and future planning</li>
+                  </ul>
+                </div>
+              </div>
+
+              <div class="fieldwork-card">
+                <h4>Optional digital reflection</h4>
+                <p>Write one observation about the site and one prediction for the future of work in Honeysuckle.</p>
+                <textarea id="fieldwork-reflection" placeholder="Type your reflection..."></textarea>
+
+                <div class="student-fieldwork-form">
+                  <label>
+                    <span>My idea</span>
+                    <input id="student-fieldwork-idea" type="text" placeholder="What change would you introduce?" />
+                  </label>
+                  <label>
+                    <span>My evidence</span>
+                    <input id="student-fieldwork-evidence" type="text" placeholder="What did you observe?" />
+                  </label>
+                  <label>
+                    <span>Changing work</span>
+                    <input id="student-fieldwork-work" type="text" placeholder="What jobs or industries could change?" />
+                  </label>
+                  <label>
+                    <span>Stakeholders</span>
+                    <input id="student-fieldwork-stakeholders" type="text" placeholder="Who would benefit or have concerns?" />
+                  </label>
+                  <label>
+                    <span>Final reflection</span>
+                    <textarea id="student-fieldwork-final" placeholder="How has work in Honeysuckle changed, and what might change next?"></textarea>
+                  </label>
+                </div>
+
+                <div class="ticket-actions">
+                  <button class="secondary-btn small-btn" data-task="fieldwork prep">Mark preparation reviewed</button>
+                  <button class="primary-btn small-btn" data-task="fieldwork reflection">Save reflection</button>
+                </div>
+              </div>
+            </section>
+          </div>
+        </div>
+      </section>
+
+      <section id="teacher-portal" class="portal-panel">
+        <div class="container teacher-layout">
+          <div class="teacher-intro">
+            <p class="eyebrow">Teacher portal</p>
+            <h3>Teaching sequence</h3>
+            <p>These lessons use Honeysuckle as a case study to help students identify how the work landscape has changed, examine why these changes affect individuals and communities, and then analyse how different stakeholders influence the changes made. The excursion brings these ideas together and gives students evidence to connect historical change to present-day land use and future planning.</p>
+          </div>
+
+          <section class="teacher-section">
+            <div class="section-heading inline-heading">
+              <p class="eyebrow">Lesson planning</p>
+              <h3>Questions &amp; Teaching Decisions</h3>
+            </div>
+            <div id="qa-accordion" class="qa-accordion"></div>
+          </section>
+
+          <div class="teacher-grid">
+            <article class="teacher-card highlight">
+              <h4>Why Honeysuckle?</h4>
+              <p>It offers a visible example of industrial change and redevelopment in one location. Students can connect visible landscape shifts with broader issues around jobs, economic change and local planning.</p>
+            </article>
+            <article class="teacher-card">
+              <h4>How the lessons fit together</h4>
+              <p>Lesson 1 introduces work and work arrangements; Lesson 2 explores how industrial change affects wellbeing and identity; Lesson 3 adds stakeholder negotiation and trade-offs.</p>
+            </article>
+            <article class="teacher-card">
+              <h4>Checking understanding</h4>
+              <p>Student learning is checked through classification decisions, discussions, exit tickets, quizzes, fieldwork observations and a final proposal.</p>
+            </article>
+          </div>
+
+          <section class="teacher-section">
+            <div class="section-heading inline-heading">
+              <p class="eyebrow">Teacher lesson guides</p>
+              <h3>Lesson pages</h3>
+            </div>
+            <div class="lesson-guide-grid">
+              <article class="guide-card">
+                <h4>Lesson 1 — Types of work</h4>
+                <p><strong>Inquiry:</strong> How have the types of work and work arrangements in Honeysuckle changed over time?</p>
+                <ul>
+                  <li>Industry Workforce Challenge</li>
+                  <li>Honeysuckle Worker Sort</li>
+                  <li>Industry Collision</li>
+                </ul>
+                <p><strong>Teaching intention:</strong> Students build a foundation in identifying jobs, work arrangements and the economic shifts associated with industrial change.</p>
+                <div class="teaching-note">
+                  <h5>Why this approach?</h5>
+                  <p>Students can start with familiar occupations before they examine a less familiar historical setting. The fictional worker cards let students interpret employment clues instead of simply memorising definitions, and the industry collision allows them to predict how changing land use could affect work over time.</p>
+                </div>
+              </article>
+
+              <article class="guide-card">
+                <h4>Lesson 2 — Work and wellbeing</h4>
+                <p><strong>Inquiry:</strong> How has industrial change in Newcastle affected the wellbeing of individuals and the broader community?</p>
+                <ul>
+                  <li>Workshop closure discussion</li>
+                  <li>Research source analysis</li>
+                  <li>Opinion line</li>
+                </ul>
+                <p><strong>Teaching intention:</strong> Students connect economic change to identity, social life and community wellbeing.</p>
+                <div class="teaching-note">
+                  <h5>Why this approach?</h5>
+                  <p>The BHP closure in Mayfield provides a significant Newcastle example of industrial change and its effects on workers and communities. Historical sources help students consider evidence and different experiences instead of assuming redevelopment has only positive or only negative effects, while the opinion line gives them a way to justify a position and listen to different perspectives.</p>
+                </div>
+              </article>
+
+              <article class="guide-card">
+                <h4>Lesson 3 — Stakeholders</h4>
+                <p><strong>Inquiry:</strong> How do different stakeholders influence decisions about redevelopment, and whose interests are prioritised?</p>
+                <ul>
+                  <li>Stakeholder roles</li>
+                  <li>Development meeting</li>
+                  <li>Decision matrix</li>
+                </ul>
+                <p><strong>Teaching intention:</strong> Students negotiate trade-offs and explain how competing interests shape decision-making around place.</p>
+                <div class="teaching-note">
+                  <h5>Why this approach?</h5>
+                  <p>Stakeholder roles make students consider priorities other than their own. Distinguishing needs and wants gives them a structure for deciding what can and cannot be compromised, while unexpected developments reveal that plans often require revision when costs, heritage, investment or environmental concerns become more visible.</p>
+                </div>
+              </article>
+            </div>
+          </section>
+
+          <section class="teacher-section">
+            <div class="section-heading inline-heading">
+              <p class="eyebrow">Resources</p>
+              <h3>Resource library</h3>
+            </div>
+            <div id="resource-library" class="folder-grid"></div>
+          </section>
+
+          <section class="teacher-section">
+            <div class="section-heading inline-heading">
+              <p class="eyebrow">Fieldwork</p>
+              <h3>Fieldwork Overview</h3>
+            </div>
+            <div id="fieldwork-activity-grid" class="fieldwork-activity-grid"></div>
+          </section>
+
+          <section class="teacher-section">
+            <div class="section-heading inline-heading">
+              <p class="eyebrow">Student work</p>
+              <h3>Demo submissions</h3>
+            </div>
+
+            <div class="submission-tabs">
+              <button class="submission-tab active" data-submission-tab="exit-tickets-table">Exit Tickets</button>
+              <button class="submission-tab" data-submission-tab="quiz-results-table">Quiz Results</button>
+              <button class="submission-tab" data-submission-tab="fieldwork-reflections-table">Fieldwork Reflections</button>
+            </div>
+
+            <div id="exit-tickets-table" class="submission-panel active-panel">
+              <table>
+                <thead>
+                  <tr><th>Student</th><th>Lesson</th><th>Status</th><th>Response</th><th>Date</th></tr>
+                </thead>
+                <tbody id="teacher-exit-list"></tbody>
+              </table>
+            </div>
+
+            <div id="quiz-results-table" class="submission-panel">
+              <table>
+                <thead>
+                  <tr><th>Student</th><th>Lesson 1</th><th>Lesson 2</th><th>Lesson 3</th><th>Overall</th></tr>
+                </thead>
+                <tbody id="teacher-quiz-list"></tbody>
+              </table>
+            </div>
+
+            <div id="fieldwork-reflections-table" class="submission-panel">
+              <div class="teacher-reflection-layout">
+                <ul id="teacher-fieldwork-list" class="fieldwork-reflection-list"></ul>
+                <div id="fieldwork-reflection-detail" class="reflection-detail"></div>
+              </div>
+            </div>
+          </section>
+        </div>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <div class="container footer-inner">
+        <p>Stage 5 Commerce / Honeysuckle / The changing nature of work</p>
+        <p>Demo mode: browser-only data</p>
+      </div>
+    </footer>
+
+    <script src="script.js"></script>
+  </body>
+</html>

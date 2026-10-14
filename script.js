@@ -76,22 +76,23 @@ const fieldworkActivities = [
 
 const resourceLibrary = [
   { name: 'Lesson Plans', items: [
-      { name: 'Lesson Plan 1 — Types of Work', href: 'resources/lesson-plan-1.md' },
-      { name: 'Lesson Plan 2 — Work and Wellbeing', href: 'resources/lesson-plan-2.md' },
-      { name: 'Lesson Plan 3 — Stakeholders', href: 'resources/lesson-plan-3.md' }
+      { name: 'Lesson Plan 1 (DOCX)', href: 'Files/Lesson%20plan%201%20EDUC2060.docx' },
+      { name: 'Lesson Plan 2 (DOCX)', href: 'Files/Lesson%20plan%202%20EDUC2060.docx' },
+      { name: 'Lesson Plan 3 (DOCX)', href: 'Files/Lesson%20plan%203%20EDUC2060.docx' }
     ]},
   { name: 'Teaching Resources', items: [
-      { name: 'Industry Workforce Challenge', href: 'resources/resource-1.md' },
-      { name: 'Honeysuckle: Then and Now', href: 'resources/resource-2.md' },
-      { name: 'Honeysuckle Worker Cards', href: 'resources/resource-3.md' },
-      { name: 'Research Pack', href: 'resources/resource-4.md' },
-      { name: 'Where Do You Stand?', href: 'resources/resource-5.md' },
-      { name: 'Redevelopment Challenge', href: 'resources/resource-6.md' }
+      { name: 'Lesson 1 — Resource 1 (PDF)', href: 'Files/EDUC2060___Lesson_1___Resource_1%20copy.pdf' },
+      { name: 'Lesson 1 — Resource 2 (PDF)', href: 'Files/EDUC2060___Lesson_1___Resource_2%20copy.pdf' },
+      { name: 'Lesson 1 — Resource 3 (PDF)', href: 'Files/EDUC2060___Lesson_1___Resource_3%20copy.pdf' },
+      { name: 'Lesson 2 — Resource 4 (PDF)', href: 'Files/EDUC2060___Lesson_2___Resource_4%20copy.pdf' },
+      { name: 'Lesson 2 — Resource 5 (PDF)', href: 'Files/EDUC2060___Lesson_2___Resource_5%20copy.pdf' },
+      { name: 'Lesson 3 — Resource 6 (PDF)', href: 'Files/EDUC2060___Lesson_3___Resource_6%20copy.pdf' },
+      { name: 'Lesson 3 — Resource 7 (PDF)', href: 'Files/EDUC2060___Lesson_3___Resource_7%20copy.pdf' }
     ]},
   { name: 'Fieldwork Resources', items: [
-      { name: 'Fieldwork Booklet', href: 'resources/fieldwork-booklet.md' },
       { name: 'Fieldwork Overview', href: 'resources/fieldwork-overview.md' },
-      { name: 'Student Preparation', href: 'resources/student-preparation.md' }
+      { name: 'Student Preparation', href: 'resources/student-preparation.md' },
+      { name: 'Fieldwork Booklet (PDF)', href: 'Files/WORK%20%20PLACE%20fieldwork%20booklet%20(2)%20copy.pdf' }
     ]},
   { name: 'Administrative Documents', items: [
       { name: 'Risk Assessment', href: 'resources/risk-assessment.md' },
